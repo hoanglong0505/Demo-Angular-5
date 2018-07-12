@@ -1,0 +1,10 @@
+<div class="body">
+        <div *ngFor="let new of news let i = index;"  class="item-card">
+                <mat-card class="card" *ngIf="i<=count*3-1">
+                    <img class="image" src="{{new.image}}" (click)="detail(new.id)"/>
+                    <div class="content " ><h3 (click)="detail(new.id)">{{new.title}}</h3>
+                    <p>{{new.description}}</p></div>
+                </mat-card>
+            </div>
+            <button   *ngIf="(count)*3<news.length" (click)="showmore()" mat-raised-button color="primary">Show more </button>
+</div>
