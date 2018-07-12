@@ -23,9 +23,21 @@ export class LoginComponent implements OnInit {
   ]);
 exit = false;
 user: User = new User ;
-  constructor() { }
+  constructor(private userService: UserService, private router: Router) { }
 
   ngOnInit() {
   }
-
+  submit() {
+    this.userService.login(this.emailFormControl.value, this.passwordFormControl.value).then((res: User[]) => {
+      console.log(res);
+      if (res.length > 0 ) {
+      alert('Hello ' + res[0].name);
+      this.router.navigate(['/news']);
+      } else {
+        alert('Invalid !');
+      }
+    }).catch(err => {
+      alert(err);
+    });
+  }
 }

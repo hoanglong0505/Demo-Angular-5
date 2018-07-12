@@ -25,4 +25,13 @@ register(user) {
         });
     });
 }
+login(email, pass) {
+    return new Promise((resolve, reject) => {
+        this.apiService.get('User?email=' + email + '&password=' + pass).then(res => {
+            resolve(res.json());
+        }).catch(err => {
+            reject(err);
+        });
+    });
+}
 }

@@ -241,51 +241,6 @@
       "name": "admin",
       "password": "123",
       "id": 3
-    },
-    {
-      "email": "sd@gmail.com",
-      "name": "admin",
-      "password": "123",
-      "id": 4
-    },
-    {
-      "id": 5
-    },
-    {
-      "id": 6
-    },
-    {
-      "id": 7
-    },
-    {
-      "id": 8
-    },
-    {
-      "id": 9
-    },
-    {
-      "email": "x@gmail.com",
-      "name": "admin",
-      "password": "123",
-      "id": 10
-    },
-    {
-      "email": "xy@gmail.com",
-      "name": "admin",
-      "password": "123",
-      "id": 11
-    },
-    {
-      "email": "abc@gmail.com",
-      "name": "admin",
-      "password": "123",
-      "id": 12
-    },
-    {
-      "email": "qwe@gmail",
-      "name": "admin",
-      "password": "123",
-      "id": 13
     }
   ]
 }

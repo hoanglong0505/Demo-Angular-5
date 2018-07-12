@@ -41,7 +41,7 @@ this.user.email = this.emailFormControl.value;
 this.user.name = this.nameFormControl.value;
 this.user.password = this.passwordFormControl.value;
 this.userService.register(this.user);
-this.router.navigate(['']);
+this.router.navigate(['/news']);
     }
   }).catch(err => {
     alert(err);
