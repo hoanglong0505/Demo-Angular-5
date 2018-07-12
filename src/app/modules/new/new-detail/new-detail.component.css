@@ -1,0 +1,28 @@
+.body{
+    display: inline-block;
+    padding: 20px;
+
+}
+.image{
+    max-width: 200px;
+    max-height: 200px;
+    display: inline-block;
+    padding: 20px;
+}
+.content{
+    max-width: 70%;
+    display: inline-block;
+    font-weight:normal;
+    color:#323D29;
+    letter-spacing:1pt;
+    word-spacing:1pt;
+    font-size:16px;
+    text-align:left;
+    font-family:comic sans, comic sans ms, cursive, verdana, arial, sans-serif;
+    line-height:1;
+    padding: 10px;
+    vertical-align: baseline;
+}
+.title{
+    text-align: center;
+}
