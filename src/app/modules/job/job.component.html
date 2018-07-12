@@ -1,0 +1,18 @@
+<div  class="body">
+  <div *ngFor="let job of jobs let i = index;"  class="item-card">
+  <mat-card   class="card"   >
+      <mat-card-header>
+          <mat-card-title (click)="detail(job.id)" ><h3>{{job.title}}</h3> </mat-card-title >
+        </mat-card-header>
+   
+      
+      <mat-card-content>
+          <div (click)="detail(job.id)" >    <img class="mat-card-image" src="{{job.image}}"/></div>
+          <p><strong>{{job.type}}</strong> </p>
+          
+        </mat-card-content>
+  </mat-card>
+</div>
+
+</div>
+<button   *ngIf="(count)*4==jobs.length" (click)="showmore()" mat-raised-button color="primary">Show more</button>
