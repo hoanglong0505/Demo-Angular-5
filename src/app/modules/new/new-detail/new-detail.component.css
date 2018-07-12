@@ -1,7 +1,6 @@
 .body{
     display: inline-block;
-    padding: 20px;
-
+    margin-top:50px;
 }
 .image{
     max-width: 200px;

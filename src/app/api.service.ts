@@ -17,8 +17,7 @@ export class ApiService {
                     resolve(res);
                 }
             }).catch(err => {
-                // if (err.status === 401) this.router.navigate(["/login"]);
-                // else reject(err);
+
             });
     });
 }
@@ -32,7 +31,7 @@ get(url: string) {
                   resolve(res);
               }
           }).catch(err => {
-              
+
           });
   });
 }
