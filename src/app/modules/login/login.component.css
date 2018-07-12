@@ -1,0 +1,23 @@
+card{
+    max-width: 60% auto;
+    max-height: 900px;
+    text-align: center;
+}
+mat-card-title{
+    width: 100%;
+    text-align: center;
+   
+}
+mat-card-header{
+    text-align: center;         
+   
+}
+.form { 
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+.full-width {
+    width: 100%;
+    padding: 10px;
+  }

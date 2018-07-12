@@ -14,15 +14,6 @@
           Email is <strong>required</strong>
         </mat-error>
       </mat-form-field>
-      <mat-error *ngIf="exit==true">
-        Email is <strong>Exited</strong>
-      </mat-error>
-      <mat-form-field class="full-width">
-        <input matInput placeholder="Your Name" [formControl]="nameFormControl">
-        <mat-error *ngIf="nameFormControl.hasError('required')">
-          Name is <strong>required</strong>
-        </mat-error>
-      </mat-form-field>
       <mat-form-field class="full-width">
         <input matInput placeholder="Password" [formControl]="passwordFormControl" type="password">
         <mat-error *ngIf="passwordFormControl.hasError('required')">
@@ -33,6 +24,6 @@
   </mat-card-content>
   <mat-card-actions>
     <button mat-button color="primary" type="submit" 
-    [disabled]="!(this.emailFormControl.valid && this.nameFormControl.valid && this.passwordFormControl.valid)" (click)="submit()">Register</button>
+    [disabled]="!(this.emailFormControl.valid  && this.passwordFormControl.valid)" (click)="submit()">Login</button>
   </mat-card-actions>
 </mat-card>

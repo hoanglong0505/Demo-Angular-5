@@ -6,6 +6,7 @@ import { NewComponent } from './modules/new/new.component';
 import { JobDetailComponent } from './modules/job/job-detail/job-detail.component';
 import { NewDetailComponent } from './modules/new/new-detail/new-detail.component';
 import { RegisterComponent } from './modules/register/register.component';
+import { LoginComponent } from './modules/login/login.component';
 
 
 
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path: 'job-detail/:id', component: JobDetailComponent },
   { path: 'news', component: NewComponent },
   { path: 'new-detail/:id', component: NewDetailComponent },
-  { path: 'register', component: RegisterComponent }
+  { path: 'register', component: RegisterComponent },
+  { path: 'login', component: LoginComponent }
 ];
 @NgModule({
   exports: [ RouterModule ],

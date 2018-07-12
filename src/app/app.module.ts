@@ -26,6 +26,7 @@ import { JobDetailComponent } from './modules/job/job-detail/job-detail.componen
 import { NewService } from './service/new.service';
 import { NewDetailComponent } from './modules/new/new-detail/new-detail.component';
 import { RegisterComponent } from './modules/register/register.component';
+import { LoginComponent } from './modules/login/login.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { RegisterComponent } from './modules/register/register.component';
     HomeComponent,
     JobDetailComponent,
     NewDetailComponent,
-    RegisterComponent
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
